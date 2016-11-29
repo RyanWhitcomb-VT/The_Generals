@@ -13,11 +13,11 @@ import numpy as np
 startTime = datetime.now()
 
 # Retrieve Access Token: https://developers.facebook.com/tools/explorer/
-access_token = 'EAACEdEose0cBAP4uTh7qPuMtygUZBFUSXLxQmL7IdGAb3OfzhvyFzbFGhRvDREBtmagzEZCeIZBMYvsCMAYeFfEgA9t9AnXiZBJ93lJtBsijDGRBlmKqCagsZA5fZCXhXhZAoJPmUwqNQp2P3QiszBGDIZAV3fAiZCxv4Swn3GiYWYAZDZD'
+access_token = 'EAACEdEose0cBADltDi9qPK156EvpDnvMEVgXNXs3yc6ma6RQE1InaCnX5KmZCy0ww6RsDd3NzxbwfqNdxZBtzZAMByW01b4KBPNgCN1hu8xsORfzILp3vGN1OPLJ2fbEIIapyIFJafo2MGKXLPw8XZBX37GrXkGL9udWFUdy5QZDZD'
 graph = facebook.GraphAPI(access_token)
 
 # Open the text file containing the base names and id's and make it a dictionary
-with open("base_IDs") as f:
+with open("Base_IDs") as f:
     content = f.readlines()
 bases = {}
 for line in content:
@@ -66,15 +66,18 @@ for base in bases:
                             except KeyError:
                                 break
                             break
-                            
+                        
                 # Attempt to make a request to the next page of data, if it exists.
+                save = comment_list
                 posts = requests.get(posts['paging']['next']).json()
             
             except KeyError:
+                save2 = comment_list
                 # When there are no more pages (['paging']['next']), break from 
                 # the loop and end the script.
                 with open(key, mode='w') as output:
                     json.dump(comment_list, output)
+                break
 
 # Print out how long the script took
 print datetime.now() - startTime
