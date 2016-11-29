@@ -1,0 +1,71 @@
+Anniston Army Depot:Alabama
+Camp Shelby:Mississippi
+Redstone Arsenal:Alabama
+Fort McClellan:Alabama
+Fort Leonard Wood:Missouri
+Fort Greely:Alaska
+Fort Dix:New Jersey
+Fort Wainwright:Alaska
+Picatinny Arsenal:New Jersey
+Fort Richardson:Alaska
+Fort Monmouth:New Jersey
+Fort Huachuca:Arizona
+White Sands Missile Range:New Mexico
+Yuma Proving Ground:Arizona
+Fort Drum:New York
+U.S. Military Academy, West Point:New York
+Pine Bluff Arsenal:Arkansas
+Fort Hamilton:New York
+Watervliet Arsenal:New York
+Fort Irwin:California
+Sierra Army Depot:California
+Fort Bragg:North Carolina
+Presidio of Monterey:California
+Fort Carson:Colorado
+Fort Sill:Oklahoma
+Rocky Mountain Arsenal:Colorado
+Tooele Army Depot:Utah
+Dugway Proving Ground:Utah
+Fort Leavenworth:Kansas
+Fort Riley:Kansas
+Fort A.P. Hill:Virginia
+Fort Belvoir:Virginia
+Fort Campbell:Kentucky
+Fort Meyer (Joint Base Myer-Henderson Hall):Virginia
+Fort Knox:Kentucky
+Fort Eustis (Joint Base Langley-Eustis):Virginia
+Blue Grass Army Depot:Kentucky
+Fort Lee:Virginia
+Fort Polk:Louisiana
+Joint Base Lewis-McChord [JBLM]:Washington
+Yakima Training Center:Washington
+Aberdeen Proving Ground:Maryland
+Camp Murray:Washington
+Fort Meade:Maryland
+Fort Detrick:Maryland
+Fort McCoy:Florida
+Soldier Systems Center:Massachusetts
+Pueblo Chemical Depot:Colorado
+Walter Reed Army Medical Center:Maryland
+Carlisle Barracks: Pennsylvania
+Tobyhanna Army Depot:Pennsylvania
+Letterkenny Army Depot: Pennsylvania
+Fort Benning:Georgia
+Fort Stewart:Georgia
+Fort Buchanan:Puerto Rico
+Fort Gordon:Georgia
+Hunter Army Airfield:Georgia
+Fort Gillem:Georgia
+Fort Jackson:South Carolina
+Lawson Army Airfield:Georgia
+Fort McPherson:Georgia
+Biggs Army Airfield:Texas
+Fort Hood:Texas
+Fort Shafter:Hawaii
+Corpus Christi Army Depot:Texas
+Schofield Barracks:Hawaii
+Fort Sam Houston:Texas
+Pohakuloa Training Area:Hawaii
+Fort Bliss:Texas
+Wheeler Army Airfield:Hawaii
+Red River Army Depot:Texas
