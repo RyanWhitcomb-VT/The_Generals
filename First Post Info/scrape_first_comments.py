@@ -9,7 +9,7 @@ import matplotlib
 import numpy as np
 
 # Retrieve Access Token: https://developers.facebook.com/tools/explorer/
-access_token = 'EAARsEoXsaHABAJQRjZAfox763JpAbwefvUGUAebqzSK0B0wk4CEvNWuU6OIbUCQ8CWUGEOZAW6dirZAkKW16YSibLwHorRTuLP4E1Sirp62QZCIFkLzmngX99hnshZCUZAWc9ZBhx5ZBBzKXcbK0XRPBHYZBEO4Xzci0ZD'
+access_token = 'EAACEdEose0cBAAF3nn3Yka8p3EeX8t2vgFphzcrvhN8wiNMIylZAfSPFT4DvINmt85WyiRZC4jVAfWxztibzw8HxJDeZBoj0EhDbxer9E5xN0vZAUfZBZCSkSiIn4uGYRSLzhEiy7qNKMb9xQ4uMo2ubNPGK2oW8WZAJOWeQKz0FQZDZD'
 graph = facebook.GraphAPI(access_token)
 
 # Open the text file containing the base names and id's and make it a dictionary
