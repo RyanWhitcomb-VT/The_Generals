@@ -13,3 +13,5 @@ for subdir, dirs, files in os.walk('Processed_Data/'):
         
 # Concatenate all the DateFrames together
 df = pd.concat(file_list)
+
+df.to_csv("All_Bases.csv")
