@@ -10,29 +10,6 @@ library(descr)
 ################################################################
 # Make individual charts for each of the bases
 
-# Fort Belvoir
-belvoir <- read.csv("C:/Users/Ryan/Documents/2016 Fall Semester/CMDA 4864/Project/Sentiment Radar Chart/Army_Fort_Belvoir.csv", stringsAsFactors = FALSE)
-belvoir$date <- as.Date(belvoir$created_time)
-belvoir$Comment <- iconv(belvoir$Comment, "latin1", "ASCII", sub = "")
-
-belvoir2 <- rbind(belvoir)
-belvoircomments <- belvoir2$Comment
-belvoircomments <- toUTF8(belvoircomments)
-
-sentimentsBelvoir <- get_nrc_sentiment(belvoircomments)
-
-sumSentsBelvoir <- as.data.frame(colSums(sentimentsBelvoir))
-
-sumSentsBelvoir$Names <- row.names(sumSentsBelvoir)
-
-colnames(sumSentsBelvoir) <- c("Sums","Type")
-
-sumSentsBelvoir1 <- sumSentsBelvoir[2:1]
-save(sumSentsBelvoir1, file = "sumsentsBelvoir.RData")
-
-sumSentsBelvoir1 <- sumSentsBelvoir1 %>% mutate(norm = Sums/max(Sums)) %>% dplyr::select(Type, norm)
-names(sumSentsBelvoir1) <- c("Label", "Belvoir")
-
 
 
 
@@ -1114,17 +1091,18 @@ south_viz <- left_join(south_viz, sumSentsStewart1, by = c("Label"="Label"))
 south_viz <- left_join(south_viz, sumSentsHunter1, by = c("Label"="Label"))
 south_viz <- left_join(south_viz, sumSentsPinebluff1, by = c("Label"="Label"))
 south_viz <- left_join(south_viz, sumSentsRedriver1, by = c("Label"="Label"))
+south_viz <- left_join(south_viz, sumSentsAnniston1, by = c("Label"="Label"))
 
-south_anger_viz = unlist(south_viz[1,c(2:17)])
-south_antic_viz = unlist(south_viz[2,c(2:17)])
-south_disgust_viz = unlist(south_viz[3,c(2:17)])
-south_fear_viz = unlist(south_viz[4,c(2:17)])
-south_joy_viz = unlist(south_viz[5,c(2:17)])
-south_sad_viz = unlist(south_viz[6,c(2:17)])
-south_surprise_viz = unlist(south_viz[7,c(2:17)])
-south_trust_viz = unlist(south_viz[8,c(2:17)])
-south_neg_viz = unlist(south_viz[9,c(2:17)])
-south_pos_viz = unlist(south_viz[10,c(2:17)])
+south_anger_viz = unlist(south_viz[1,c(2:18)])
+south_antic_viz = unlist(south_viz[2,c(2:18)])
+south_disgust_viz = unlist(south_viz[3,c(2:18)])
+south_fear_viz = unlist(south_viz[4,c(2:18)])
+south_joy_viz = unlist(south_viz[5,c(2:18)])
+south_sad_viz = unlist(south_viz[6,c(2:18)])
+south_surprise_viz = unlist(south_viz[7,c(2:18)])
+south_trust_viz = unlist(south_viz[8,c(2:18)])
+south_neg_viz = unlist(south_viz[9,c(2:18)])
+south_pos_viz = unlist(south_viz[10,c(2:18)])
 
 boxplot(south_anger_viz, south_antic_viz, south_disgust_viz, south_fear_viz, 
         south_joy_viz, south_sad_viz, south_surprise_viz, south_trust_viz,
@@ -1162,8 +1140,7 @@ boxplot(midwest_anger_viz, midwest_antic_viz, midwest_disgust_viz, midwest_fear_
 
 
 #West
-west_viz <- left_join(sumSentsAnniston1, sumSentsDugway1, by = c("Label"="Label"))
-west_viz <- left_join(west_viz, sumSentsGreely1, by = c("Label"="Label"))
+west_viz <- left_join(sumSentsGreely1, sumSentsDugway1, by = c("Label"="Label"))
 west_viz <- left_join(west_viz, sumSentsHuachuca1, by = c("Label"="Label"))
 west_viz <- left_join(west_viz, sumSentsIrwin1, by = c("Label"="Label"))
 west_viz <- left_join(west_viz, sumSentsWainwright1, by = c("Label"="Label"))
@@ -1171,16 +1148,16 @@ west_viz <- left_join(west_viz, sumSentsJblm1, by = c("Label"="Label"))
 west_viz <- left_join(west_viz, sumSentsPresidio1, by = c("Label"="Label"))
 west_viz <- left_join(west_viz, sumSentsYuma1, by = c("Label"="Label"))
 
-west_anger_viz = unlist(west_viz[1,c(2:10)])
-west_antic_viz = unlist(west_viz[2,c(2:10)])
-west_disgust_viz = unlist(west_viz[3,c(2:10)])
-west_fear_viz = unlist(west_viz[4,c(2:10)])
-west_joy_viz = unlist(west_viz[5,c(2:10)])
-west_sad_viz = unlist(west_viz[6,c(2:10)])
-west_surprise_viz = unlist(west_viz[7,c(2:10)])
-west_trust_viz = unlist(west_viz[8,c(2:10)])
-west_neg_viz = unlist(west_viz[9,c(2:10)])
-west_pos_viz = unlist(west_viz[10,c(2:10)])
+west_anger_viz = unlist(west_viz[1,c(2:9)])
+west_antic_viz = unlist(west_viz[2,c(2:9)])
+west_disgust_viz = unlist(west_viz[3,c(2:9)])
+west_fear_viz = unlist(west_viz[4,c(2:9)])
+west_joy_viz = unlist(west_viz[5,c(2:9)])
+west_sad_viz = unlist(west_viz[6,c(2:9)])
+west_surprise_viz = unlist(west_viz[7,c(2:9)])
+west_trust_viz = unlist(west_viz[8,c(2:9)])
+west_neg_viz = unlist(west_viz[9,c(2:9)])
+west_pos_viz = unlist(west_viz[10,c(2:9)])
 
 boxplot(west_anger_viz, west_antic_viz, west_disgust_viz, west_fear_viz, 
         west_joy_viz, west_sad_viz, west_surprise_viz, west_trust_viz,
