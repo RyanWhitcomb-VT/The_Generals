@@ -1,0 +1,46 @@
+Anniston Army Depot:South
+Redstone Arsenal:South
+Fort Leonard Wood:Midwest
+Fort Greely:North
+Fort Wainwright:West
+Picatinny Arsenal:North
+Fort Huachuca:West
+Yuma Proving Ground:West
+Fort Drum:North
+Pine Bluff Arsenal:South
+Fort Hamilton:North
+Watervliet Arsenal:North
+Fort Irwin:West
+Presidio of Monterey:West
+Fort Carson:Midwest
+Dugway Proving Ground:West
+Fort Leavenworth:Midwest
+Fort Riley:Midwest
+Fort A.P. Hill:South
+Fort Belvoir:South
+Fort Campbell:South
+Fort Meyer (Joint Base Myer-Henderson Hall):South
+Fort Knox:South
+Fort Eustis (Joint Base Langley-Eustis):South
+Fort Lee:South
+Fort Polk:South
+Joint Base Lewis-McChord [JBLM]:West
+Aberdeen Proving Ground:North
+Fort Meade:North
+Fort Detrick:North
+Soldier Systems Center:North
+Pueblo Chemical Depot:Midwest
+Walter Reed Army Medical Center:North
+Carlisle Barracks: North
+Tobyhanna Army Depot:North
+Letterkenny Army Depot:North
+Fort Benning:South
+Fort Stewart:South
+Fort Buchanan:South
+Fort Gordon:South
+Hunter Army Airfield:South
+Fort Jackson:South
+Biggs Army Airfield:South
+Corpus Christi Army Depot:South
+Fort Bliss:South
+Red River Army Depot:South
